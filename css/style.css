@@ -1,56 +1,140 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
+    color: #fff;
   }
+
+ h1{
+      margin-top: 49px;
+ }
   
+ .class{
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 5;
+ }
+
+
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: fixed;
+    height: 100%;
+    width: 300px;
   }
+
   
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 3px;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  a:hover{
+    background-color: #fff;
+    color: #222;
+  }
+
   nav {
-    display: flex;
+    display: block;
     justify-content: center;
-    margin-top: 20px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
   }
   
   nav ul {
     list-style: none;
     display: flex;
+    justify-content: end;
+    background-color: #222;
+    padding: 10px;
+    margin: 0;
   }
   
   nav li {
     margin-right: 20px;
   }
-  
+
+  .presentation {
+    margin-top: 200px;
+  }
+
+
   main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
+    margin-left: 20%;
   }
-  
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; 
+}
+
+img{
+  border-radius: 100px;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
   section {
     width: 60%;
     margin: 20px;
     padding: 20px;
     text-align: left;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  section h3,h4{
+    text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 5px;
   }
 
+  section p{
+    border-radius: 20px;
+    color: #fff;
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+    
+  }
+
+
   .membre1 {
-    background-color: lightcoral;    
+    background-color: rgb(71, 176, 207);   
+    padding: 20px;  
   }
   .membre2 {
-    background-color: lightgreen;    
-  }
-  .membre3 {
-    background-color: lightblue;    
-  }
-  .membre4 {
-    background-color: lightgoldenrodyellow;    
-  }
-  .membre5 {
-    background-color: lightseagreen;    
-  }
+    background-color: rgb(211, 189, 64);   
+    padding: 20px; 
+    }
+
+    header h2{
+      font-size: medium;
+      padding: 20px;
+    }
+
